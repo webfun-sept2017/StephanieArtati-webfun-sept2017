@@ -1,0 +1,140 @@
+/*CSS reset settings here*/
+*{
+ margin: 0px;
+ padding: 0px;
+}
+#wrapper{
+ width: 970px;
+ background: linear-gradient(#422e39, #6b4d5e, #422e39);
+ background: linear-gradient(to right, #422e39, #6b4d5e, #422e39);
+ margin: 0px auto;
+ overflow: hidden;
+ font-family: sans-serif;
+ /*height: auto;*/
+}
+#header{
+ height: 50px;
+ background-color: #efeaea;
+ /*color: black;*/
+ /*margin: 20px;*/
+ padding: 10px 20px 10px 20px;
+
+}
+
+#header h1{
+  font-family: Comic Sans MS;
+}
+
+#header h1, #header h2{
+  display: inline;
+}
+#header h2{
+  float: right;
+  padding-top: 10px;
+}
+
+#summary{
+ /*height: 350px;*/
+ width: 970px;
+ /*background-color: red;*/
+ /*margin: 20px;*/
+ /*display: inline-block;*/
+ vertical-align: top;
+}
+
+#profile_pic{
+  display: inline-block;
+
+}
+#profile_pic img{
+  height: 270px;
+  width: auto;
+  margin: 20px 0px 0px 20px;
+  border: 10px solid lightgrey;
+  display: inline-block;
+  /*vertical-align: top;*/
+}
+
+p{
+   padding: 10px;
+}
+
+#summary .card{
+  width: 470px;
+  height: 290px;
+  vertical-align: top;
+  margin: 20px 0px 0px 20px;
+}
+
+.card{
+ /*background-color: linear-gradient(90deg, rgba(227,227,227,1) 0%, rgba(232,153,197,1) 100%);*/
+ background-color: white;
+ /*padding: 20px;*/
+ display: inline-block;
+ margin: 20px 0px 20px 20px;
+ background: linear-gradient(to right, #f5f1f5 , #e1d1df);
+}
+
+.card h2, .card h3{
+  background: linear-gradient(#999696, #807e7e ,#999696);
+  padding: 10px;
+  color: white;
+}
+
+.card img{
+  width: 100%;
+  height: auto;
+}
+
+#card_container .card{
+  width: 30%;
+  vertical-align: top;
+}
+
+#card_container .card p{
+  height: 220px;
+}
+.logos li img{
+  width: 40px;
+  heigh: 40px;
+  display: inline;
+  margin: 7px 6px 0px 6px;/*float: right;*/
+}
+
+.logos{
+  padding: 5px;
+}
+.logos li{
+  display: inline;
+}
+
+button{
+  color: white;
+  background-color: green;
+  border: 1px solid darkgreen;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  display: block;
+  /*text-align: center;*/
+}
+#footer{
+ height: 50px;
+ background-color: #efeaea;
+ text-align: center;
+ padding: 20px;
+}
+
+#footer p{
+  padding: 5px;
+}
+
+.username li, .username li img{
+  height: 20px;
+  width: 20px;
+  display: inline;
+  vertical-align: middle;
+  padding: 0px 1px 0px 0px;
+}
