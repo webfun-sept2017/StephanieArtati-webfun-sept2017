@@ -1,0 +1,111 @@
+/*CSS reset settings here*/
+*{
+ margin: 0px;
+ padding: 0px;
+}
+#top_wrapper{
+ width: 970px;
+ background-color: #2d5372;
+ overflow: hidden;
+ font-family: sans-serif;
+ color: white;
+ /*vertical-align: top;*/
+ /*height: auto;*/
+}
+#top_wrapper a{
+  color: white;
+  text-decoration: none
+}
+
+#top_wrapper #references a{
+  text-decoration: underline;
+}
+#header img{
+ height: 100px;
+ padding: 20px;
+ display: inline-block;
+}
+
+#header #menu{
+  margin: 20px;
+  margin-left: 280px;
+  vertical-align: top;
+  display: inline-block;
+  font-size: 14px;
+}
+#header p{
+  margin: 0px 0px 5px 70px;
+}
+
+#header a{
+  color: yellow;
+}
+#header #search{
+  /*margin-left: 300px;*/
+  background-color: #4a4949;
+  padding: 10px 30px 10px 30px;
+  margin: 0px;
+  border-radius: 10px;
+
+}
+#search input{
+  height: 35px;
+  width: 150px;
+  border: 2px solid grey;
+  text-align: center;
+  color: grey;
+  font-size: 12px;
+}
+#search button{
+  background-color: #2d5372;
+  color: white;
+  height: 35px;
+  width: 50px;
+  border-radius: 10px;
+}
+
+#nav_bar{
+  margin-left: auto;
+  margin-right: auto;
+  background: linear-gradient(#2a6fa7,#477fad,#2a6fa7);
+  margin: 0px 50px;
+  padding: 15px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 2px 2px 0px black;
+}
+
+#nav_bar ul li{
+  display: inline;
+  font-size: 22px;
+  margin: 20px;
+  list-style-type: none;
+}
+
+#references, #description{
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  background-color: black;
+  margin: 20px;
+}
+
+#references ul li{
+  padding: 5px;
+}
+
+#references ul{
+  margin: 20px 20px 20px 150px;
+  background-color: black;
+  /*display: inline-block;*/
+}
+
+#description p{
+  margin: 10px;
+  font-size: 14px;
+}
+#description .highlight{
+  color: #ffca00;
+  font-size: 18px;
+  font-style: italic;
+}
