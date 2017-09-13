@@ -3,20 +3,25 @@
  margin: 0px;
  padding: 0px;
 }
+#wrapper{
+  width: 970px;
+  margin: 0px auto;
+  font-family: sans-serif;
+}
 #top_wrapper{
- width: 970px;
  background-color: #2d5372;
  overflow: hidden;
- font-family: sans-serif;
  color: white;
- /*vertical-align: top;*/
- /*height: auto;*/
+ box-shadow: 0px 2px 0px #223e55;
 }
 #top_wrapper a{
   color: white;
   text-decoration: none
 }
-
+a{
+  color: #4b8bbe;
+  text-decoration: none;
+}
 #top_wrapper #references a{
   text-decoration: underline;
 }
@@ -25,7 +30,6 @@
  padding: 20px;
  display: inline-block;
 }
-
 #header #menu{
   margin: 20px;
   margin-left: 280px;
@@ -46,7 +50,6 @@
   padding: 10px 30px 10px 30px;
   margin: 0px;
   border-radius: 10px;
-
 }
 #search input{
   height: 35px;
@@ -63,7 +66,6 @@
   width: 50px;
   border-radius: 10px;
 }
-
 #nav_bar{
   margin-left: auto;
   margin-right: auto;
@@ -74,32 +76,31 @@
   border-radius: 10px;
   box-shadow: 2px 2px 0px black;
 }
-
 #nav_bar ul li{
   display: inline;
   font-size: 22px;
   margin: 20px;
   list-style-type: none;
 }
-
 #references, #description{
   text-align: center;
   display: inline-block;
   vertical-align: top;
-  background-color: black;
   margin: 20px;
 }
-
+#references{
+  width: 30%;
+}
+#description{
+  width: 60%;
+}
 #references ul li{
   padding: 5px;
 }
-
 #references ul{
-  margin: 20px 20px 20px 150px;
-  background-color: black;
+  margin: 20px 20px 20px 100px;
   /*display: inline-block;*/
 }
-
 #description p{
   margin: 10px;
   font-size: 14px;
@@ -108,4 +109,45 @@
   color: #ffca00;
   font-size: 18px;
   font-style: italic;
+}
+.card{
+  display: inline-block;
+  width: 30%;
+  font-size: 14px;
+  vertical-align: top;
+  margin: 10px 10px 10px 100px;
+  margin-left: 100px;
+  text-align: center;
+  border-top: 3px solid #4b8bbe;
+  padding: 5px 30px 5px 30px;
+}
+
+#pypi{
+  font-size: 12px;
+}
+.card h3, .card p{
+  padding: 5px;
+}
+
+#bottom_wrapper{
+  height: 50px;
+  text-align: center;
+  background: linear-gradient(#2d5372,#5788b0);
+
+  padding: 50px 0px 0px 0px;
+}
+
+#bottom_wrapper a{
+  color: #7dadd3;
+}
+
+#bottom_wrapper ul li{
+  display: inline;
+  margin: 30px;
+}
+
+#bottom_wrapper p{
+  font-size: 10px;
+  margin: 10px;
+  color: #7dadd3;
 }
