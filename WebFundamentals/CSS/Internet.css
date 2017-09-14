@@ -1,0 +1,184 @@
+/*CSS reset settings here*/
+*{
+ margin: 0px;
+ padding: 0px;
+ overflow: visible;
+}
+
+span{
+  color: rgba(43,99,149,1);
+}
+span.important{
+  color: red;
+}
+
+#wrapper{
+  width: 970px;
+  margin: 0px auto;
+  font-family: sans-serif;
+}
+
+#body{
+  background: linear-gradient(lightgrey,white,white,white,white);
+}
+#header h1{
+  margin-left: 90px;
+  margin-top: 40px;
+  color: #3c3c3c;
+}
+
+#header h2{
+  margin-top: 5px;
+  /*margin-bottom: 0px;*/
+  padding: 10px;
+  background: linear-gradient(rgba(43,99,149,1),rgba(94,160,219,1),rgba(43,99,149,1));
+  color: white;
+}
+
+img#ww{
+  height: 80px;
+  position: absolute;
+  top: 15px;
+  left: 155px;
+}
+
+#lhs{
+  padding: 10px;
+  width: 180px;
+  display: inline-block;
+  vertical-align: top;
+  font-weight: bold;
+  /*font-size: 12px;*/
+}
+
+.line{
+  border-bottom: 1px solid #b2afaf;
+  width: 180px;
+}
+
+#ad{
+  margin-top: 20px;
+  padding: 15px 0px;
+  /*border-top: 1px solid grey;*/
+  width: 180px;
+  text-align: center;
+  color: white;
+  background-image: url("../html/internet_img/ad_background.png");
+}
+
+#ninja{
+  width: 80px;
+}
+
+button{
+  margin: 2px 0px;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+
+button#video{
+  background: linear-gradient(to bottom, #3498db, #194c6d);
+}
+button#resources{
+  background: linear-gradient(to bottom, #ec8738, #e06c13);
+  margin-bottom: 20px;
+}
+button#learnmore{
+  background: linear-gradient(to bottom, #83d0d8, #28cfe0);
+  width: 80%;
+  margin: 15px;
+}
+p{
+  margin: 10px 0px;
+  font-size: 12px;
+}
+
+#rhs{
+  width: 700px;
+  margin-left: 50px;
+  /*background-color: black;*/
+  display: inline-block;
+  /*vertical-align: top;*/
+}
+#subheader{
+  border-bottom: 1px solid #b2afaf;
+  width: 100%;
+}
+#home{
+  padding-top: 10px;
+  width:20px;
+}
+#phone_logo{
+  padding-top: 5px;
+  width:35px;
+}
+
+#phone_wrapper{
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 450px;
+  margin-bottom: 10px;
+  padding-top: 5px;
+}
+#support{
+  display: inline-block;
+}
+
+#support ul li{
+  list-style-type: none;
+  font-size: 10px;
+}
+#support #phone_number{
+  font-size:18px;
+  font-weight: bold;
+  color: #00b0da;
+}
+#subheader a{
+  text-decoration: none;
+  color: rgba(43,99,149,1);
+}
+
+#main h3{
+  color: rgba(43,99,149,1);
+  font-size: 17px;
+  margin-top: 10px;
+}
+#main span{
+  color: #03a4cb;
+}
+#main *{
+  font-size: 13px;
+}
+#main ul li,
+#main ol li{
+  margin: 5px 5px 5px 25px;
+}
+
+img#client_server{
+  width: 250px;
+  margin: auto;
+  display: block;
+}
+img#bigthree_pic{
+  width: 100px;
+  margin-top: 10px
+}
+
+#bigthree{
+  margin-top: 15px;
+  padding: 10px;
+  border-top: 5px solid #0c72cc;
+  border-left: 5px solid #0c72cc;
+  border-right: 5px solid #0c72cc;
+
+}
+
+#bigthree_description{
+  display: inline-block;
+  width: 500px;
+  vertical-align: top;
+  margin-left: 10px;
+}
