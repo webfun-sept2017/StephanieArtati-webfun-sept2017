@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Worth a Billion</title>
+      <meta charset="utf-8">
+      <script type="text/javascript">
+        var reward=0.01;
+        var reward_on_day_th=0.01;
+        for (var i=2; i<=30; i++){
+          reward_on_day_th *= 2;
+          reward += reward_on_day_th;
+        }
+        console.log("Total reward after 30 days:",reward);
+      </script>
+   </head>
+   <body>
+   </body>
+</html>
