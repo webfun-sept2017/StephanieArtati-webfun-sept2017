@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <title>JQuery Fun!</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/JQueryFunctions.css">
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script>
+      "use strict;"
+      $(document).ready(function(){
+        // if you don't use this ready() function, your code will run before the HTML content you wrote gets rendered--
+        /* adding a class to a p tag to turn it red color */
+        $('#add_class button').click(function(){
+          $('#add_class p').addClass('red');
+        });
+        $('#slide_toggle button').click(function(){
+          $('#slide_toggle img').slideToggle('slow');
+        });
+        $('#append button').click(function(){
+          $('#append').append('<p>I am a newly appended paragraph</p>');
+        });
+        $('#hide button').click(function(){
+          $('#hide img').hide();
+        });
+        $('#show button').click(function(){
+          $('#show img').show();
+        });
+        $('#toggle button').click(function(){
+          $('#toggle p').toggle();
+        });
+        $('#attr button').click(function(){
+          $('#attr p').text($('#attr img').attr('src'));
+          $('#attr').data("key1", "value1");
+            $('#attr').data("key2", "value2");
+        //  console.log($('#attr').data());
+        });
+        $('#val button').click(function(){
+          $('#val input').val("It is sunny today!");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="add_class">
+      <button>Add Class</button>
+      <p>This text should turn red because I am adding this to red class</p>
+    </div>
+    <div id="slide_toggle">
+      <button>Slide Toggle</button>
+      <img src="../HTML/butterfly.jpg">
+    </div>
+    <div id="append">
+        <button>Append Paragraph</button>
+        <p>Hello World, I'm the first paragraph</p>
+    </div>
+    <div id="hide">
+        <button>Hide</button>
+        <img src="../HTML/butterfly.jpg">
+    </div>
+    <div id="show">
+        <button>Show</button>
+        <img src="../HTML/butterfly.jpg">
+    </div>
+    <div id="toggle">
+        <button>Toggle paragraph display</button>
+        <p>Can this paragraph toggles?</p>
+    </div>
+    <div id="attr">
+        <button>Set attribute</button>
+        <img src="../HTML/butterfly.jpg">
+        <p>change me to src attribute of image</p>
+    </div>
+    <div id="val">
+        <button>Set value</button>
+        <input type="text"></input>
+    </div>
+  </body>
+</html>

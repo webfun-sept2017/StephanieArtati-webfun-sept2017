@@ -1,0 +1,15 @@
+/*CSS reset settings here*/
+*{
+ margin: 0px auto;
+ padding: 0px;
+}
+.red{
+  color: red;
+}
+img{
+  height: 50px;
+  vertical-align: middle;
+}
+#show img{
+  display: none;
+}
