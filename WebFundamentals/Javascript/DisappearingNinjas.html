@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>JQuery Fun!</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/DisappearingNinjas.css">
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script>
+      "use strict;"
+      $(document).ready(function(){
+        // if you don't use this ready() function, your code will run before the HTML content you wrote gets rendered--
+        /* adding a class to a p tag to turn it red color */
+        $('img').click(function(){
+          $(this).addClass('hide');
+        });
+        $('#restore').click(function(){
+          $('img').removeClass('hide');
+        });
+
+      });
+    </script>
+  </head>
+  <body>
+    <img src="../HTML/butterfly.jpg">
+    <img src="../HTML/butterfly.jpg">
+    <img src="../HTML/butterfly.jpg">
+    <img src="../HTML/butterfly.jpg">
+    <img src="../HTML/butterfly.jpg">
+    <img src="../HTML/butterfly.jpg">
+    <img src="../HTML/butterfly.jpg">
+    <img src="../HTML/butterfly.jpg">
+    <button id="restore">Restore</button>
+  </body>
+</html>

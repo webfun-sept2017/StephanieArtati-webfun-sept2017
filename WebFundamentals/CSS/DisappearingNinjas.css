@@ -1,0 +1,15 @@
+/*CSS reset settings here*/
+*{
+ margin: 0px auto;
+ padding: 0px;
+}
+img{
+  height: 150px;
+  /*vertical-align: middle;*/
+}
+img.hide{
+  visibility: hidden;
+}
+#restore{
+  display: block;
+}
