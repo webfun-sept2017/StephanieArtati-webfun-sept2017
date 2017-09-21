@@ -1,0 +1,10 @@
+/*CSS reset settings here*/
+*{
+ margin: 0px auto;
+ padding: 0px;
+}
+img{
+  width: 200px;
+  padding: 3px;
+  display: block;
+}

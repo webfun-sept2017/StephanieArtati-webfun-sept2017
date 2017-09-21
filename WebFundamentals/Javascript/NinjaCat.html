@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>Ninja to Cat!</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/NinjaCat.css">
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script>
+      "use strict;"
+      $(document).ready(function(){
+        // if you don't use this ready() function, your code will run before the HTML content you wrote gets rendered--
+        /* adding a class to a p tag to turn it red color */
+        $('img').click(function(){
+          //console.log($(this).attr('alt-src'));
+          //console.log($(this).attr('src'));
+          var altsrc=$(this).attr('alt-src');
+          var src=$(this).attr('src');
+          $(this).attr('src',altsrc);
+          $(this).attr('alt-src',src);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <img src="../HTML/ninjacat_img/cat0.png" alt-src="../HTML/ninjacat_img/ninja0.png">
+    <img src="../HTML/ninjacat_img/cat1.png" alt-src="../HTML/ninjacat_img/ninja1.png">
+    <img src="../HTML/ninjacat_img/cat2.png" alt-src="../HTML/ninjacat_img/ninja2.png">
+    <img src="../HTML/ninjacat_img/ninja3.png" alt-src="../HTML/ninjacat_img/cat3.png">
+    <img src="../HTML/ninjacat_img/ninja4.png" alt-src="../HTML/ninjacat_img/cat4.png">
+  </body>
+</html>
