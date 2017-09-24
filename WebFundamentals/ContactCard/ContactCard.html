@@ -1,0 +1,43 @@
+<html>
+  <div id="wrapper">
+    <head>
+      <title>Contact Card</title>
+      <link rel="stylesheet" type="text/css" href="ContactCard.css">
+      <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+      <script>
+        "use strict;"
+        $(document).ready(function(){
+
+          // use on to attach handler for dynamic card class
+          $(document).on('click','button',function() {
+          // $('button').click(function(){
+            var firstname = $('input#firstname').val();
+            var lastname = $('input#lastname').val();
+            var description = $('input#description').val();
+            $('#rhs').append("<div class='card'><h2>"+firstname+" "+lastname+"</h2><div id='a_wrapper'><a href=''>Click for description!</a></div></div>");
+          });
+
+          $(document).on('click','a',function() {
+            var text=$('textarea').val();
+            $(this).parent().parent().html("<p>"+text+"</p>");
+            // prevent clicking on a to load a new page
+            return false;
+          });
+
+        });
+      </script>
+    </head>
+    <body>
+      <div id="lhs">
+        <form method="post">
+          <p id="firstname">First Name: <input id="firstname" type="text" name="FirstName" value=""></p>
+          <p id="lastname">Last Name: <input id="lastname" type="text" name="LastName" value=""></p>
+          <p id="description">Description: <textarea id="description" cols="31" rows="5" name="description" value=""></textarea></p>
+        </form>
+        <button>Add User</button>
+      </div>
+      <div id="rhs">
+      </div>
+    </body>
+  </div>
+</html>

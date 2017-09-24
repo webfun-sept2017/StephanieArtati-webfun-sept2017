@@ -1,0 +1,71 @@
+/*CSS reset settings here*/
+*{
+   margin: 0px auto;
+   padding: 0px;
+}
+
+#wrapper{
+   margin: 0px auto;
+   width: 970px;
+}
+input{
+  display: inline;
+  width: 150px;
+  height: 25px;
+  margin: 5px;
+  border: 1px solid grey;
+}
+textarea#description{
+  display: block;
+  margin-left: 0px;
+  border: 1px solid grey;
+  /*width: 234px;
+  height: 100px;
+  overflow: scroll;*/
+
+}
+p#firstname{
+  margin-left: 23px;
+}
+p#lastname{
+  margin-left: 25px;
+}
+p#description{
+  margin-left: 25px;
+}
+button{
+  margin: 10px 25px;
+  width: 235px;
+  height: 30px;
+}
+#lhs{
+  width: 40%;
+  display: inline-block;
+}
+#rhs{
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
+}
+.card{
+  border: 1px solid black;
+  padding: 10px;
+  width: 300px;
+  height: 80px;
+  overflow: auto;
+  margin: 10px;
+
+}
+
+#a_wrapper{
+  width:300px;
+  text-align: center;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.card h2{
+  text-align: center;
+}
