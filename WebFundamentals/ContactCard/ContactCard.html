@@ -13,12 +13,12 @@
           // $('button').click(function(){
             var firstname = $('input#firstname').val();
             var lastname = $('input#lastname').val();
-            var description = $('input#description').val();
-            $('#rhs').append("<div class='card'><h2>"+firstname+" "+lastname+"</h2><div id='a_wrapper'><a href=''>Click for description!</a></div></div>");
+            var description = $('textarea#description').val();
+            $('#rhs').append("<div class='card' description='"+description+"'><h2>"+firstname+" "+lastname+"</h2><div id='a_wrapper'><a href=''>Click for description!</a></div></div>");
           });
 
           $(document).on('click','a',function() {
-            var text=$('textarea').val();
+            var text=$(this).parent().parent().attr('description');
             $(this).parent().parent().html("<p>"+text+"</p>");
             // prevent clicking on a to load a new page
             return false;
