@@ -14,12 +14,12 @@
           var id=$(this).attr('id');
           var img_src=$(this).attr('src');
           $.get(`https://pokeapi.co/api/v1/pokemon/${id}`,function (res){
-            console.log(res);
+            console.log("at the start of outer .get");
             var name=res.name;
             var types=res.types;
             var height=res.height;
             var weight=res.weight;
-            var html = `<h1 class="name">${name}</h1>`;
+            html = `<h1 class="name">${name}</h1>`;
             html+= '<img src="'+img_src+'">';
             html+= "<span>Types</span>";
             html+= '<ul>';
@@ -29,7 +29,7 @@
             html+= '</ul>';
             html+= `<span>Height</span>${height}`;
             html+= `<span>Weight</span>${weight}`;
-            console.log(html);
+            //console.log(html);
             $('#pokedex').html(html);
           },'json');
         });
