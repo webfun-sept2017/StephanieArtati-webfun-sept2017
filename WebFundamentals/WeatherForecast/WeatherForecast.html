@@ -9,7 +9,8 @@
           $('form').submit(function() {
           // your code here (build up your url)
           var city=$('input#city').val();
-          //var city=$(this).children().getElementsByName('city').val(); //silently failed
+          //var city=document.getElementById('city').value; // alternate
+          console.log(city);
           var key='329297e46ad4845e20896b3775aa6e0e';
           var url=`http://api.openweathermap.org/data/2.5/weather?q=${city}&&units=imperial&&appid=${key}`;
           $.get(url, function(res) {
