@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JQueryUI: DatePicker</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/redmond/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script>
+		$(document).on('submit','#form',function(){
+			if (!$('#from').val() || !$('#to').val()){
+				alert("Must specify travel dates");
+			}
+			else{
+				alert("Traveling from "+$('#from').val()+" to "+$('#to').val());
+		 	} 
+			return false;
+		});
+  	$( function() {
+			var dateFormat = "mm/dd/yy",
+		       from = $( "#from" )
+		         .datepicker({
+		           defaultDate: "+1w",
+		           changeMonth: true,
+		           numberOfMonths: 1,
+							 minDate: "+2d",
+							 maxDate: "+3m"
+		         })
+		         .on( "change", function() {
+		           to.datepicker( "option", "minDate", getDate( this ));
+
+		         }),
+		       to = $( "#to" ).datepicker({
+		         defaultDate: "+1w",
+		         changeMonth: true,
+		         numberOfMonths: 1,
+						 minDate: "+3d",
+						 maxDate: "+3m +1d"
+		       })
+		       .on( "change", function() {
+		         from.datepicker( "option", "maxDate", getDate( this ) );
+		       });
+
+		     function getDate( element ) {
+		       var date;
+		       try {
+		         date = $.datepicker.parseDate( dateFormat, element.value );
+		       } catch( error ) {
+		         date = null;
+		       }
+
+		       return date;
+		     }
+  	});
+  </script>
+	<style>
+
+	</style>
+</head>
+<body>
+	<form id="form">
+		<label for="from">Pick Up</label>
+		<input type="text" id="from" name="from">
+		<label for="to">Return</label>
+		<input type="text" id="to" name="to">
+		<input type="submit">
+	</form>
+</body>
+</html>
