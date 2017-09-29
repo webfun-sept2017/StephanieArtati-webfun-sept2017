@@ -1,0 +1,41 @@
+*{
+		box-sizing: border-box;
+}
+#wrapper{
+	margin: 0px auto;
+}
+
+.column {
+	float: left;
+	width: 25%;
+	padding-right: 20px;
+	vertical-align: top;
+}
+#header{
+	background-color: lightgrey;
+	padding: 2px 15px ;
+}
+
+#nav li{
+	display: inline;
+	padding: 5px 10px;
+	margin-right: 1px;
+	background-color: lightgrey;
+	border: 1px solid grey;
+}
+#nav ul{
+	padding: 0px;
+	/*margin: 0px;*/
+}
+
+@media only screen and (max-width:843px){
+	#nav{
+		display:none;
+	}
+	.column{
+		width: 33.33%;
+	}
+	.zombie{
+		width: 100%;
+	}
+}
